@@ -22,3 +22,9 @@ _* Precisamos deixar o HTML semântico, use as tags HTML que correspondem corret
  _* Na tag <html>, está faltando um parâmetro que é obrigatório. Você consegue identificar e aplicar?_
 
  * lang="pt-br"
+
+### Passo 2: tornando a casa acessível.
+ 
+ _* Vixe!Parece que o HTML não está totalmente acessível. Você consegue melhorar a acessibilidade?*_
+
+ * 

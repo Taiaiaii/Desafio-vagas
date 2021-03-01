@@ -1,23 +1,14 @@
-html {
+body {
   font-family: "Inter", sans-serif;
+    background: rebeccapurple;
+    color: #071723;
 }
-
 @supports (font-variation-settings: normal) {
-  html {
+  body {
     font-family: "Inter var", sans-serif;
   }
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background: rebeccapurple;
-  color: #071723;
-}
 
 .box {
   background-color: #f2f2f2;
@@ -26,6 +17,32 @@ body {
   margin: 20px auto;
   overflow: hidden;
   width: 550px;
+  box-sizing: border-box;
+}
+
+.header {
+  background: url(images/header.png) center right no-repeat;
+  background-size: cover;
+  height: auto;
+  padding: 23px 36px;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.title {
+
+  width: 40%;
+  text-align: left;
+   color: #fff;
+  font-size: 23px;
+  font-weight: 300;
+  padding-bottom: 5%;
+}
+
+.title strong {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.46;
 }
 
 .space {
@@ -41,25 +58,8 @@ body {
   font-weight: 600;
 }
 
-.header {
-  background: url(images/header.png) center right no-repeat;
-  background-size: cover;
-  height: 187px;
-  padding: 23px 36px;
-  width: 100%;
-}
 
-.header .title {
-  color: #fff;
-  font-size: 23px;
-  font-weight: 300;
-}
 
-.header .title strong{
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 1.46;
-}
 
 .form textarea {
   background: #dde3e9;

@@ -1,5 +1,3 @@
-@import url("https://rsms.me/inter/inter.css");
-
 html {
   font-family: "Inter", sans-serif;
 }
@@ -57,7 +55,7 @@ body {
   font-weight: 300;
 }
 
-.header .title span {
+.header .title strong{
   font-weight: bold;
   font-size: 24px;
   line-height: 1.46;

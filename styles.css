@@ -1,8 +1,9 @@
 body {
   font-family: "Inter", sans-serif;
-    background: rebeccapurple;
-    color: #071723;
+  background: rebeccapurple;
+  color: #071723;
 }
+
 @supports (font-variation-settings: normal) {
   body {
     font-family: "Inter var", sans-serif;
@@ -17,11 +18,14 @@ body {
   margin: 20px auto;
   overflow: hidden;
   width: 85%;
-  margin: 5% auto; 
+  margin: 5% auto;
+
 }
+
 * {
-   box-sizing: border-box;
+  box-sizing: border-box;
 }
+
 .header {
   background: url(images/header.png) center right no-repeat;
   background-size: cover;
@@ -33,7 +37,7 @@ body {
 .title {
   width: 60%;
   text-align: left;
-   color: #fff;
+  color: #fff;
   font-size: 0.9em;
   line-height: 1.46;
   font-weight: 300;
@@ -43,7 +47,7 @@ body {
 .title strong {
   font-weight: bold;
   font-size: 1.01em;
-  
+
 }
 
 .form {
@@ -62,10 +66,10 @@ body {
 }
 
 .fieldset label {
-   display: block;
-   margin: 1% 0;
-   font-size: 0.78em;
-   
+  display: block;
+  margin: 1% 0;
+  font-size: 0.78em;
+
 
 }
 
@@ -110,11 +114,12 @@ body {
   padding: 3%;
   resize: none;
   height: 20vh;
-  width: 90%; 
+  width: 90%;
   margin: 3% auto;
   font-size: 0.5em;
   margin-top: 2%;
 }
+
 #caixa-obs::-webkit-input-placeholder {
   font-family: Inter;
   font-style: normal;
@@ -122,9 +127,10 @@ body {
   font-size: 1.5em;
   line-height: 2em;
   color: #071723;
-  width: 100%; 
-  text-align: left; 
+  width: 100%;
+  text-align: left;
 }
+
 .footer {
   padding: 10%;
   background: #dde3e9;
@@ -150,3 +156,49 @@ body {
   background: #191847;
 }
 
+/* ----------------VERSÃO TABLET--------------- */
+
+@media screen and (min-width: 768px) {
+  .box {
+    width: 60%;
+  }
+
+  .header {
+    padding: 4% 6% 10%;
+  }
+
+  .title {
+    width: 70%;
+    font-size: 1.2em;
+    line-height: 1.46em;
+  }
+
+  .title strong {
+    font-size: 1.03em;
+  }
+  .legenda {
+    font-size: 1em;
+  }
+  .elements-counter img {
+    width: 7%;
+  }
+  .input-counter {
+    width: 10%;
+    padding: 1.1%;
+    margin: 0 1px;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .box {
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    box-shadow: 10px 22px 34px 0 rgba(0, 0, 0, 0.5);
+    margin: 20px auto;
+    overflow: hidden;
+    width: 550px;
+  }
+
+}

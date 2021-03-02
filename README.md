@@ -30,10 +30,13 @@ _* Precisamos deixar o HTML semântico, use as tags HTML que correspondem corret
  * O código é simples, então não foram necessárias muitas implementações.
  A propria adição das tags semantigas e do atributo lang já deixam a página bem mais acessível. Além disso, usei o atributo "alt" nas imagens, para descreve-las.
 
- Parte da acessibilidade consiste em tornar a página responsiva. Assim, no CSS implementei configurações específicas para telas do tipo: mobile, tablet e alguns tamanhos de tela web, utilizando o conceito de mobile-first, buscando deixar a experiência do usuário o mais parecida possível nos diferentes tipos de dispositivos.
+ * Parte da acessibilidade consiste em tornar a página responsiva. Assim, no CSS implementei configurações específicas para telas do tipo: mobile, tablet e alguns tamanhos de tela web, utilizando o conceito de mobile-first, buscando deixar a experiência do usuário o mais parecida possível nos diferentes tipos de dispositivos.
 
  ### Passo 3: contador de stickers
 
   _* Precisamos fazer o componente de contador funcionar para que o usuário possa definir a quantidade de stickers que deseja comprar_
 
-  * 
+  * Com JS busquei na tela a caixa dos stickers e adicionei o evento escutador de click. Quando o evento do clique é o botão que contem a classe botao-mais, o valor do input é acrescido em 1, e quando contem classe botao-menos, é reduzido.
+  Adicionei também uma classe que muda o layout do input quando o botão de menos é clicado e o valor já é 0, pois no layout do FIGMA há esse comportamento.
+
+  * Há também no FIGMA um comportamento de botão hover. Por esse motivo e também por questão de semantica, substitui as img dos sinais de mais e menos por um button configurado diretamente no CSS.  

@@ -97,11 +97,7 @@ body {
   vertical-align: top;
 }
 
-.botao-mais {
-  font-size: 1.1em;
-  padding: 1.5%;
-  padding-top: 1.2%;
-}
+
 
 .botoes-counter:focus,
 .botoes-counter:hover {

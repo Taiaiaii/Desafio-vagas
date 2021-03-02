@@ -5,27 +5,23 @@ const divMsg = document.createElement('div')
 
 
 btn.addEventListener('click', () => {
+    const erros = [...getCheckBoxErrors(), ...getContadorErrors()]
 
-    let erros = []
-
-    let checkVazio = verificaCheckBox(erros)
-    let contadorZerado = verificaContador(erros)
-
-    if (checkVazio || contadorZerado) {
+    if (erros.length) {
         divMsg.innerHTML = erros.join('<br>')
         form.insertAdjacentElement('beforebegin', divMsg);
-
-
     } else {
         divMsg.remove()
         divMsg.textContent = 'Formulário enviado com sucesso'
         footer.insertAdjacentElement('beforebegin', divMsg);
+        form.reset()
 
     }
 
 });
 
-function verificaCheckBox(erros) {
+function getCheckBoxErrors() {
+    let erros = []
     let stickers = form.querySelector('.fieldset')
     let camposSticker = form.querySelectorAll('.marcar')
     let qntErro = 0;
@@ -40,15 +36,16 @@ function verificaCheckBox(erros) {
         erros.push(stickers.dataset.mensagem)
 
     }
-    return erros.length
+    return erros
 }
 
-function verificaContador(erros) {
+function getContadorErrors() {
+    let erros = []
     let contador = form.querySelector('.input-counter')
     if (contador.value == 0) {
         erros.push(contador.dataset.mensagem)
     }
 
-    return erros.length
+    return erros
 
 }

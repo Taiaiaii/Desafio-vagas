@@ -17,20 +17,20 @@
 		</header>
 		<main>
 			<form class="form">
-				<fieldset class="fieldset">
+				<fieldset data-mensagem="Escolha ao menos um tipo de sticker" class="fieldset">
 					<legend class="legenda">Quais stickers?</legend>
-					<label for="react"><input id="react" class="input-fieldset" type="checkbox"> React</label>
-
-					<label for="vur"><input id="vue" class="input-fieldset" type="checkbox"> Vue</label>
-
-					<label for="angular"><input id="angular" class="input-fieldset" type="checkbox"> Angular</label>
+					<label for="react"><input  id="react" class="input-fieldset marcar" type="checkbox" > React</label>
+					<label for="vur"><input id="vue" class="input-fieldset marcar"
+							type="checkbox"> Vue</label>
+					<label for="angular"><input  id="angular" class="input-fieldset marcar"
+							type="checkbox"> Angular</label>
 
 				</fieldset>
 				<section class="counter">
 					<legend class="legenda">Quantos stickers de cada?</legend>
 					<div class="elements-counter">
 						<button class="botoes-counter botao-menos" type="button">-</button>
-						<input class="input-counter" type="text" placeholder="0">
+						<input data-mensagem = "Informe o número de stickers"class="input-counter" type="text" placeholder="0">
 						<button class="botoes-counter botao-mais" type="button">+</button >
 					</div>
 				</section>
@@ -40,11 +40,10 @@
 - Com papel especial laminado. 
 - Manda um beijo pro Julio!"></textarea>
 				</section>
-
 			</form>
 		</main>
 		<footer class="footer">
-			<button>Enviar</button>
+			<button class="botao-enviar"type="button">Enviar</button>
 		</footer>
 		<script src="scripts/app.js" type="module"></script>
 </body>

@@ -40,3 +40,5 @@ _* Precisamos deixar o HTML semântico, use as tags HTML que correspondem corret
   Adicionei também uma classe que muda o layout do input quando o botão de menos é clicado e o valor já é 0, pois no layout do FIGMA há esse comportamento.
 
   * Há também no FIGMA um comportamento de botão hover. Por esse motivo e também por questão de semantica, substitui as img dos sinais de mais e menos por um button configurado diretamente no CSS.  
+
+  ### Bonus: validação de formulário

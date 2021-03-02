@@ -2,6 +2,7 @@ const btn = document.querySelector('.botao-enviar');
 const form = document.querySelector('.form');
 const footer = document.querySelector('.footer')
 const divMsg = document.createElement('div')
+divMsg.classList.add('mensagem-erro')
 
 
 btn.addEventListener('click', () => {
@@ -9,15 +10,15 @@ btn.addEventListener('click', () => {
 
     if (erros.length) {
         divMsg.innerHTML = erros.join('<br>')
-        form.insertAdjacentElement('beforebegin', divMsg);
+         form.insertAdjacentElement('beforebegin', divMsg);
     } else {
         divMsg.remove()
         divMsg.textContent = 'Formulário enviado com sucesso'
-        footer.insertAdjacentElement('beforebegin', divMsg);
+        divMsg.classList.replace('mensagem-erro','mensagem-sucesso')
+        footer.insertAdjacentElement('afterbegin', divMsg);
         form.reset()
 
     }
-
 });
 
 function getCheckBoxErrors() {

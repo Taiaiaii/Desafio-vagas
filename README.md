@@ -23,7 +23,7 @@ _* Precisamos deixar o HTML semântico, use as tags HTML que correspondem corret
 
  * lang="pt-br"
 
-### Passo 2: tornando a casa acessível.
+### Passo 2: tornando a casa acessível
  
  _* Vixe!Parece que o HTML não está totalmente acessível. Você consegue melhorar a acessibilidade?*_
 
@@ -31,3 +31,9 @@ _* Precisamos deixar o HTML semântico, use as tags HTML que correspondem corret
  A propria adição das tags semantigas e do atributo lang já deixam a página bem mais acessível. Além disso, usei o atributo "alt" nas imagens, para descreve-las.
 
  Parte da acessibilidade consiste em tornar a página responsiva. Assim, no CSS implementei configurações específicas para telas do tipo: mobile, tablet e alguns tamanhos de tela web, utilizando o conceito de mobile-first, buscando deixar a experiência do usuário o mais parecida possível nos diferentes tipos de dispositivos.
+
+ ### Passo 3: contador de stickers
+
+  _* Precisamos fazer o componente de contador funcionar para que o usuário possa definir a quantidade de stickers que deseja comprar_
+
+  * 

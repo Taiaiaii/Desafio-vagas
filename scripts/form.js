@@ -24,7 +24,7 @@ btn.addEventListener('click', () => {
 function getCheckBoxErrors() {
     let erros = []
     let stickers = form.querySelector('.fieldset')
-    let camposSticker = form.querySelectorAll('.marcar')
+    let camposSticker = form.querySelectorAll('.nput-fieldset')
     let qntErro = 0;
 
     for (let campo of camposSticker) {

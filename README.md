@@ -52,3 +52,13 @@ _* Precisamos deixar o HTML semântico, use as tags HTML que correspondem corret
   * Foram criadas duas funções. Uma que verifica o check-box dos tipos de sticker. Caso não haja nenhum checkbox marcado, ela impurra a mensagem de erro setada no data-set do fieldset para dentro de um array, que é retornado pela função. A outra verifica se o valor do imput na parte da quantidade de sticker é igual a zero. Caso seja, faz a mesma coisa, empurra a mensagem do data-set, nesse caso do imput para dentro de um array retornado pela função. 
 
   * Coloquei então um evento escutador de click no botão. Na arrow function do evento crio um array de erros que recebe os dois arrays retornados nas funções. Verifico então o tamanho desse array (se for 0=false/se for >0 = true). Em caso de true, a div recebe como conteudo as mensagens que estão dentro do array, e essa div é inserida no início do formulário. Caso de false, a div é inicialmente removida, depois recebe como conteudo textual uma mensagem de sucesso no início do formulario e sua classe é alterada para que tenha um layout diferente da mensagem de erros, e então é insedida no rodapé, conforme modelo do FIGMA. Pesso em seguida para que o formulário seja resetado para que as informações sumam da tela após o envio.
+
+  ### Checkbox
+
+  Aqui os passos haviam sido finalizados, mas ainda havia uma diferença no layout para o modelo do FIMA, que eram as checkboxes. No arquivo do sandbox elas estavam no modelo padrão checkbox. Porem no FIGMA tinham cor azul e alguns detalhes. 
+  Acontece que checkbox não aceita background-color.
+  Fiquei um tempo pesquisando o que poderia ser feito, até que me deparei com essa [SOLUÇÃO.](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_checkbox) 
+
+  Ela propõe alterar o html colocando um span junto ao input. Esse span é que receberá as configurações do modelo e as configurações do input serão eliminadas no css.
+
+  Funcionou direitinho ;)

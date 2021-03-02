@@ -42,3 +42,13 @@ _* Precisamos deixar o HTML semântico, use as tags HTML que correspondem corret
   * Há também no FIGMA um comportamento de botão hover. Por esse motivo e também por questão de semantica, substitui as img dos sinais de mais e menos por um button configurado diretamente no CSS.  
 
   ### Bonus: validação de formulário
+
+  _* Validações de formulário ajudam o usuário a não se perder durante o preenchimento das informações necessárias. Ajude nessa causa._
+
+
+
+  * São criadas constantes para buscar no formulário o botão de envio, o formulário, o rodapé, e uma para que seja criado um elemento div. Esse elemento irá receber as mensagens de erro ou sucesso de envio do fomulário, por isso inicialmente ela recebe uma classe que contém as configurações necessárias no CSS.
+
+  * Foram criadas duas funções. Uma que verifica o check-box dos tipos de sticker. Caso não haja nenhum checkbox marcado, ela impurra a mensagem de erro setada no data-set do fieldset para dentro de um array, que é retornado pela função. A outra verifica se o valor do imput na parte da quantidade de sticker é igual a zero. Caso seja, faz a mesma coisa, empurra a mensagem do data-set, nesse caso do imput para dentro de um array retornado pela função. 
+
+  * Coloquei então um evento escutador de click no botão. Na arrow function do evento crio um array de erros que recebe os dois arrays retornados nas funções. Verifico então o tamanho desse array (se for 0=false/se for >0 = true). Em caso de true, a div recebe como conteudo as mensagens que estão dentro do array, e essa div é inserida no início do formulário. Caso de false, a div é inicialmente removida, depois recebe como conteudo textual uma mensagem de sucesso no início do formulario e sua classe é alterada para que tenha um layout diferente da mensagem de erros, e então é insedida no rodapé, conforme modelo do FIGMA. Pesso em seguida para que o formulário seja resetado para que as informações sumam da tela após o envio.

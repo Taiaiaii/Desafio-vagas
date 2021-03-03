@@ -3,7 +3,7 @@ Desafio  do __vagas.com__ no [GitHub](https://github.com/VAGAScom/desafio-front-
 
 ## Deploy
 
-Projeto deployado no github pages para facilitar visualizaçao. [LINK](https://taiaiaii.github.io/desafio-vagas/)
+Projeto deployado no github pages para facilitar visualizaçao. [LINK](https://taiaiaii.github.io/desafio-VAGAScom/)
 
 ## Descrição:
 

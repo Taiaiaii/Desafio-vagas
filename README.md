@@ -1,6 +1,10 @@
 # Desafio-vagas
 Desafio  do __vagas.com__ no [GitHub](https://github.com/VAGAScom/desafio-front-end) - para treinar e me divertir ;)
 
+## Deploy
+
+Projeto deployado no github pages para facilitar visualizaçao. [LINK](https://taiaiaii.github.io/desafio-vagas/)
+
 ## Descrição:
 
 A [base](https://codesandbox.io/s/frontend-dchtk) do projeto é pré-existente e o desafio propõe melhorar a semântica, estrutura, acessibilidade e fazer algumas implementações ;)

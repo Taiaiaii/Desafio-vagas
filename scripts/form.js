@@ -7,7 +7,7 @@ divMsg.classList.add('mensagem-erro')
 
 btn.addEventListener('click', () => {
     const erros = [...getCheckBoxErrors(), ...getContadorErrors()]
-
+    debugger;
     if (erros.length) {
         divMsg.innerHTML = erros.join('<br>')
          form.insertAdjacentElement('beforebegin', divMsg);
@@ -24,7 +24,7 @@ btn.addEventListener('click', () => {
 function getCheckBoxErrors() {
     let erros = []
     let stickers = form.querySelector('.fieldset')
-    let camposSticker = form.querySelectorAll('.nput-fieldset')
+    let camposSticker = form.querySelectorAll('.input-fieldset')
     let qntErro = 0;
 
     for (let campo of camposSticker) {
